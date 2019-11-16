@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+
+
+
+    <style>
+        .affix {
+            top: 0;
+            width: 100%;
+            z-index: 9999 !important;
+        }
+
+        .affix+.container-fluid {
+            padding-top: 70px;
+        }
+
+        .bo {
+            background-image: url("http://skatemalmo.se/wp/wp-content/uploads/2017/05/SkateMalm%C3%B6Street-2.jpg");
+            background-size: contain;
+            background-size: 100% 100%;
+            
+            
+           
+        }
+
+        .a {
+            background-color: cornsilk;
+        }
+
+        .corners {
+            border-radius: 15px;
+            background: rgb(255, 255, 255);
+            padding: 20px;
+
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .divv {
+            background-color: #E1E2E2;
+            opacity: 0.9;
+            border-style: solid;
+            border-color: #FB8122;
+        }
+
+        .title {
+            background-color: #1D2228;
+            color: #FB8122;
+            border-radius: 5px;
+            text-align: center;
+
+        }
+
+        .navv {
+            background-color: #1D2228;
+
+
+        }
+
+        .links {
+            z-index: 1
+        }
+
+        body {
+            padding-top: 70px;
+        }
+
+        h1 {
+            background: -webkit-linear-gradient(#eee, #FB8122);
+            -webkit-background-clip: text;
+            background-clip: content;
+            -webkit-text-fill-color: transparent;
+        }
+
+        footer{
+            background-color: #1D2228;
+            color: #E1E2E2;
+
+        }       
+        
+    </style>
+</head>
+
+<body class="bo">
+    <nav class="navbar links navv navbar-expand-lg navbar-dark indigo sticky">
+        <img src="https://seeklogo.com/images/S/spitfire-logo-47A9F7811D-seeklogo.com.png" height="40" alt="mdb logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li>
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="vert.html">Vert Skateboarding</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+                <div class="container-fluid col-8 offset-2">
+                        <div id="help--video-help-carousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators" style="margin-bottom: 60px;">
+                                <li data-target="#help--video-help-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#help--video-help-carousel" data-slide-to="1"></li>
+                                <li data-target="#help--video-help-carousel" data-slide-to="2"></li>
+                                <li data-target="#help--video-help-carousel" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <video width="900" height="600" border="5" controls="controls">
+                                        <source src="Send.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="carousel-caption d-none d-md-block" style="margin-bottom: 60px;">
+                                        <h3 class="h3-responsive">Send It Weekend</h3>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <video width="900" height="600" controls="controls">
+                                        <source src="Nyjah.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="carousel-caption d-none d-md-block" style="margin-bottom: 60px;">
+                                        <h3 class="h3-responsive">Nyjah Houston</h3>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <video width="900" height="600" controls="controls">
+                                        <source src="Neal.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="carousel-caption d-none d-md-block" style="margin-bottom: 60px;">
+                                        <h3 class="h3-responsive">Robert Neal</h3>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <video width="900" height="600" controls="controls">
+                                        <source src="Aprsk.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="carousel-caption d-none d-md-block" style="margin-bottom: 60px;">
+                                        <h3 class="h3-responsive">April Skate</h3>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#help--video-help-carousel" role="button" data-slide="prev" style="margin-bottom: 60px;">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#help--video-help-carousel" role="button" data-slide="next" style="margin-bottom: 60px;">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                </div >
+                <p class="corners divv">Lo street è un tipo di skateboarding che si svolge sulle strade. Viene usato qualunque tipo di ostacolo possibile, e si lascia solo all'immaginazione quale costruzione creare.
+
+                </p>
+    
+                    <p class="corners divv">Lo skateboarding è uno dei pochi sport che, specie negli Stati Uniti e in Canada e in misura minore nel resto del mondo, è diventato anche uno stile di vita giovanile, oltre che un mezzo di trasporto. In Svizzera, ad esempio, numerosi studenti lo utilizzano grazie ai numerosi e ben curati marciapiedi ciclabili, per recarsi a scuola.
+    
+                        In Italia tale sport arriva nel 1977, dopo un servizio televisivo, rubrica di spettacolo e curiosità dal mondo, diffondendosi dapprima nelle grandi città del centro-nord, più reattive rispetto al fenomeno sportivo-culturale, successivamente in tutto il territorio nazionale. L'inverno del 1977 registra un autentico boom di vendite, strade e marciapiedi sono invasi da giovanissimi entusiasti, ma al successo dello skateboard si accompagnano numerosissimi incidenti. Per la forte pericolosità dovuta alle numerose strade in discesa, Genova è la prima città a vietare la circolazione dello skateboard, divieto esteso all'inizio del 1978 in tutto il territorio nazionale, con grande disappunto dei ragazzi e buona pace dei vigili urbani. Lentamente, però, tale sport riacquista visibilità e rispetto, fino a essere riconosciuto dal CONI.
+                        
+                        Per quanto riguarda lo slalom skateboarding che come anticipato è inserito nella specialità di velocità, esiste un'associazione internazionale International Slalom Skateboarding Association, o ISSA, che gestisce le gare internazionali attribuendo i punteggi che danno origine al World Ranking dove si possono trovare tutti gli atleti con i loro piazzamenti.</p>
+    
+    
+          </div>
+                
+                
+
+            </div>
+            <div class="col-md-2"></div>
+        
+
+        
+
+        </div>
+
+</body>
+<footer class="page-footer font-small blue footer">
+
+  
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a>Andrea Gorgia</a>
+        </div>
+    
+      
+      </footer>
+
+</html>
