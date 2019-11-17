@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!---------------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!---------------------------------------------------------------------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <style>
+        .affix {
+            top: 0;
+            width: 100%;
+            z-index: 9999 !important;
+        }
+
+        .affix+.container-fluid {
+            padding-top: 70px;
+        }
+
+        .bo {
+            background-image: url("https://sgbonedoctor.com/wp-content/uploads/2015/02/skate.jpg");
+
+
+
+
+        }
+
+        .a {
+            background-color: cornsilk;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .navv {
+            background-image: linear-gradient(to right, #1d2728, #3a4144, #5a5d60, #7a7b7d, #9b9b9b);
+
+
+        }
+
+        .links {
+            z-index: 1
+        }
+
+        body {
+            padding-top: 70px;
+        }
+
+
+
+        footer {
+            background-image: linear-gradient(to right, #1d2728, #3a4144, #5a5d60, #7a7b7d, #9b9b9b);
+
+            color: #E1E2E2;
+            margin-top: 500px;
+
+        }
+
+        .formm {
+            width: 50%;
+            float: inherit;
+        }
+    </style>
+
+
+</head>
+
+<body class="bo">
+
+    <!---------------------------------------- NAVBAR ---------------------------------------------------------------->
+    <nav class="navbar links navv navbar-expand-lg navbar-dark indigo sticky">
+        <img src="https://seeklogo.com/images/S/spitfire-logo-47A9F7811D-seeklogo.com.png" height="40" alt="mdb logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li>
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="vert.html">Vert Skateboarding</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"><i>Contatti</i></a>
+                    <div class="dropdown-menu dropdown-primary navv" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="maps.html"><i>Google Maps</i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="card" style="margin: 0 auto; margin-top: 250px; width: 70%;">
+
+        <h5 class="card-header info-color white-text text-center py-4">
+            <strong>Contattaci!</strong>
+        </h5>
+
+        <div class="card-body px-lg-5 pt-0">
+
+            <form class="md-form" style="color: #757575;">
+
+
+
+                <input type="text" id="materialContactFormName" class="form-control">
+                <label for="materialContactFormName">Nome:</label>
+
+                <input type="email" id="materialContactFormEmail" class="form-control">
+                <label for="materialContactFormEmail">E-mail:</label>
+
+                <div>
+                    <select class="mdb-select" id="materialSelect">
+                        <option value="" disabled selected>Feedback</option>
+                        <option value="1">Reclamo</option>
+                        <option value="2">Richiesta</option>
+                        <option value="3">Generico</option>
+                    </select>
+                </div>
+
+                <textarea type="text" id="materialContactFormMessage" class="form-control md-textarea"
+                    rows="3"></textarea>
+                <label for="materialContactFormMessage">Scrivi qui il messaggio</label>
+                <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect"
+                    type="submit">INVIA</button>
+
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+
+
+<footer class="page-footer font-small blue footer">
+
+
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a>Andrea Gorgia</a>
+    </div>
+
+
+</footer>
+
+</html>

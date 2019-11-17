@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!---------------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!---------------------------------------------------------------------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <style>
+        .affix {
+            top: 0;
+            width: 100%;
+            z-index: 9999 !important;
+        }
+
+        .affix+.container-fluid {
+            padding-top: 70px;
+        }
+
+        .bo {
+            background-image: url("https://img.theculturetrip.com/x/smart/wp-content/uploads/2017/03/skateboarding-malm.jpg");
+            
+
+
+
+        }
+
+        .a {
+            background-color: cornsilk;
+        }
+
+        .corners {
+            border-radius: 15px;
+            background: rgb(255, 255, 255);
+            padding: 20px;
+
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .divv {
+            background-color: #E1E2E2;
+            opacity: 0.9;
+            border-style: solid;
+            border-color: #007535;
+            margin-top: 100px;
+            width: 50%;
+            
+        }
+
+        .title {
+            background-color: #1D2228;
+            color: #FB8122;
+            border-radius: 5px;
+            text-align: center;
+
+        }
+
+        .navv {
+            background-image: linear-gradient(to right, #1d2728, #3a4144, #5a5d60, #7a7b7d, #9b9b9b);
+            
+
+        }
+
+        .links {
+            z-index: 1
+        }
+
+        body {
+            padding-top: 70px;
+        }
+
+        h1 {
+            background: -webkit-linear-gradient(#eee, #FB8122);
+            -webkit-background-clip: text;
+            background-clip: content;
+            -webkit-text-fill-color: transparent;
+        }
+
+        footer {
+            background-image: linear-gradient(to right, #1d2728, #3a4144, #5a5d60, #7a7b7d, #9b9b9b);
+
+            color: #E1E2E2;
+            margin-top: 400px;
+
+        }
+    </style>
+
+
+</head>
+
+<body class="bo" >
+
+    <!---------------------------------------- NAVBAR ---------------------------------------------------------------->
+    <nav class="navbar links navv navbar-expand-lg navbar-dark indigo sticky">
+        <img src="https://seeklogo.com/images/S/spitfire-logo-47A9F7811D-seeklogo.com.png" height="40" alt="mdb logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li>
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="vert.html">Vert Skateboarding</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"><i>Contatti</i></a>
+                    <div class="dropdown-menu dropdown-primary navv" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="contact.html"><i>Newsletter</i></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="col-md-2"></div>
+    <div class="d-flex justify-content-between corners divv" style="margin: 0 auto; margin-top: 250px;">
+        
+        <div style="height: 200px; line-height: 200px; text-align: center;">
+            <p style="display: inline-block; vertical-align: middle; line-height: normal;">Potrete trovare il nostro negozio direttamente all'interno della rinomata Tour Eiffel, a Parigi. Il locale è locato al 4° piano della torre, per godersi pure una vista mozziafiato in una location rinomata e moderna.</p>
+        </div>
+
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="400" height="250" frameborder="2" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <div style="height: 200px; line-height: 200px; text-align: center;">
+            <p style="display: inline-block; vertical-align: middle; line-height: normal;">Inoltre potrete osservare una vasta collezione vintage ed acquistare le tavole più recenti, avendo pure una sezione dedicata con ramps per sfoggiare qualche trick a 50mt da terra!</p>
+        </div>
+        
+    </div>
+    <div class="col-md-2"></div>
+
+</body>
+
+
+
+<footer class="page-footer font-small blue footer">
+
+
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a>Andrea Gorgia</a>
+    </div>
+
+
+</footer>
+
+</html>
