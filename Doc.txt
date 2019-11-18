@@ -1,0 +1,28 @@
+﻿Gorgia Andrea       4F inf                                
+________________
+
+DOCUMENTAZIONE SITO WEB
+________________
+________________
+
+
+
+Coerenza colori
+_______________ 
+
+il colore all’estremo sinistro viene usato come base per le sfumature con gli altri 4 colori, ogni colore acceso indica ogni singola pagina (INDEX.html, VERT.html, STREET.html) e il colore all’estremo destro per le pagine di contatto generale (MAPS.html, CONTACTS.html).
+
+
+Tutti i colori usati negli elementi del sito sono coerenti alle immagini usate di sfondo, amalgamando adeguatamente il sito finale.
+
+_______________
+_______________
+
+Sviluppo sito
+_______________
+
+
+Il sito è formato da 5 pagine, argomentando i vari tipi di skateboarding, includendo un’estensione frame di google maps ed un form di contatto.
+
+
+Divisione delle colonne: 2 - 8 - 2
